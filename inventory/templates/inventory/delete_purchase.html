@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h2>Delete Purchase</h2>
+<form method="post">
+    <div>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <p style="color: #B22727; font-weight: bold">Are you sure you want to delete "{{ object.menu_item.title }}"?</p>
+    <input type="submit" value="Delete" />
+    </div>
+</form>
+{% endblock %}
