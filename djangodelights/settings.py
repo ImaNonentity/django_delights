@@ -80,9 +80,8 @@ WSGI_APPLICATION = 'djangodelights.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'djangodelights',
-        'USER': 'djangodelights',
-        'PASSWORD': '1',
+        'NAME': 'root',
+        'USER': 'root',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
